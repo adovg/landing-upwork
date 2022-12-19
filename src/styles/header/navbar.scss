@@ -1,0 +1,48 @@
+nav {
+  background-color: #001731;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 18px 20px;
+}
+
+.logo {
+  a {
+    img {
+      fill: #000;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+  gap: 24px;
+    &__item {
+      
+    }
+}
+
+
+.nav__control {
+  display: flex;
+}
+
+.nav__btn-primary {
+  margin-left: 45px;
+  margin-right: 8px;
+}
+
+.nav__btn {
+font-size: 13px;
+padding: 8px 12px;
+
+}

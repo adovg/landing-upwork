@@ -1,0 +1,71 @@
+
+
+@use 'sass:math';
+$containerWidth: 1280;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1200: 1199.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint480: 479.98 + px;
+
+@import './reset.scss';
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("./fonts/Gilroy-SemiBold.woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+// @import './fonts/fonts.scss';
+
+
+//Colors
+$primary: #001731;
+$secondary: #398BFF;
+
+//Fonts
+$fontMain: 'Gilroy', sans-serif;
+
+// @media (max-width: 1280px) {
+//   color: red;  
+// };
+
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
+  font-family: $fontMain;
+}
+
+.btn {
+  padding: 15px 22px;
+  padding: 8px, 22px, 8px, 22px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  display: inline-block;
+  color: $secondary;
+}
+
+.btn__primary {
+  color: #ffffff;
+  background-color: $secondary;                                          
+  border: 3px solid #2C82FD33;
+  border-radius: 4px;
+
+}
+
+.btn__secondary {
+  color: $secondary;
+  border-radius: 4px;
+  background: #072750;  
+  border: 3px solid #2C82FD33;
+}
+
+
+@import './styles/header/header.scss';
+@import './styles/header/navbar.scss';
