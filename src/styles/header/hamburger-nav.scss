@@ -1,0 +1,21 @@
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+}
+
+.line {
+  margin: 5px;
+  border-radius: 4px;
+  width: 50px;
+  height: 8px;
+  color: #fff;
+  background-color: #fff;
+}
+
+
+@media (max-width: 780px) {
+  .burger-menu {
+      display: flex;
+  }
+};

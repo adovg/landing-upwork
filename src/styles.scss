@@ -1,15 +1,6 @@
-
-
-@use 'sass:math';
-$containerWidth: 1280;
-$containerPadding: 40;
-$containerSidePadding: math.div($containerPadding, 2);
-$breakpoint1200: 1199.98 + px;
-$breakpoint992: 991.98 + px;
-$breakpoint768: 767.98 + px;
-$breakpoint480: 479.98 + px;
-
 @import './reset.scss';
+@import './styles/_colors';
+@import './styles/_media';
 
 
 @font-face {
@@ -21,24 +12,22 @@ $breakpoint480: 479.98 + px;
 
 // @import './fonts/fonts.scss';
 
-
-//Colors
-$primary: #001731;
-$secondary: #398BFF;
-
 //Fonts
 $fontMain: 'Gilroy', sans-serif;
 
-// @media (max-width: 1280px) {
-//   color: red;  
-// };
+
 
 .container {
   max-width: ($containerWidth + $containerPadding) + px;
-  width: 100%;
+  //max-width: 100%;
   margin: 0 auto;
   padding: 0 $containerSidePadding + px;
   font-family: $fontMain;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
 }
 
 .btn {
@@ -53,19 +42,31 @@ $fontMain: 'Gilroy', sans-serif;
 
 .btn__primary {
   color: #ffffff;
-  background-color: $secondary;                                          
+  background-color: $secondary;
   border: 3px solid #2C82FD33;
   border-radius: 4px;
 
+  //transition: all ease-in 0.5s;
+  &:hover {
+    background: $secondaryHover;
+    transition: .3s hover ease;
+  }
 }
 
 .btn__secondary {
   color: $secondary;
   border-radius: 4px;
-  background: #072750;  
+  background: #072750;
   border: 3px solid #2C82FD33;
+
+  &:hover {
+    background: $secondaryHover;
+    transition: .3s hover ease;
+    color: #ffffff;
+  }
 }
 
 
 @import './styles/header/header.scss';
+@import './styles/header/hamburger-nav.scss';
 @import './styles/header/navbar.scss';

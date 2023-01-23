@@ -2,9 +2,13 @@
 
 // }
 
-
+.header__wrapper {
+    background-color: $primary;
+}
 
 .burger {
     display: none;
     cursor: pointer;
 }
+
+
