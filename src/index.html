@@ -11,21 +11,32 @@
 </head>
 
 <body>
-  <nav>
-    <div class="container">
+  <div class="container">
+    <nav>
       <div class="navbar">
 
 
-        <div class="burger-menu">
+        <div class="burger__btn">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
         </div>
 
 
+        <ul class="menu-mobile hidden">
+
+          <div class="logo-mobile">
+            <a href=""><img src="./img/Logo.svg" alt="logo" /></a>
+          </div>
+
+          <li class="menu__item-mobile">How it works</li>
+          <li class="menu__item-mobile">Pricing</li>
+          <li class="menu__item-mobile">About us</li>
+          <li class="menu__item-mobile">FAQ</li>
+        </ul>
 
 
-        <ul class="menu" >
+        <ul class="menu">
 
           <div class="logo">
             <a href=""><img src="./img/Logo.svg" alt="logo" /></a>
@@ -63,11 +74,31 @@
         </div>
 
       </div>
+    </nav>
+
+
+    <!-- @partial("./styles/header/header.html") -->
+    <div class="header">
+      <div class="header__wrapper">
+        <img class="hero__img" src="../src/img/mac.png" alt="">
+          <section class="hero wrapper">
+   
+            <h1 class="hero__title">
+              <span>The most advanced </span>
+              <span>5-cards Omaha Silver</span>
+              <span>for 6-max and HU</span>
+            </h1>
+            <div class="hero__btns">
+              <button class="btn btn__primary hero__btn" href="#">Start now</button>
+              <span>or</span>
+              <button class="btn btn__secondary hero__btn" href="#">Take a free tour</button>
+            </div>
+            <p class="hero__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dolorem nesciunt ex modi veritatis?
+            </p>
+          </section>
+      </div>
     </div>
-  </nav>
-  <!-- @partial("./styles/header/header.html") -->
-  <div class="header">
-    <div class="wrapper header__wrapper"></div>
   </div>
   <script src="index.js"></script>
 </body>

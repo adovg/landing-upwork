@@ -23,11 +23,12 @@ $fontMain: 'Gilroy', sans-serif;
   margin: 0 auto;
   padding: 0 $containerSidePadding + px;
   font-family: $fontMain;
+  overflow: hidden;
 }
 
 .wrapper {
   height: 100vh;
-  width: 100vw;
+  //width: 100%;
 }
 
 .btn {
@@ -66,7 +67,11 @@ $fontMain: 'Gilroy', sans-serif;
   }
 }
 
+.hidden{
+  display: none !important;
+}
 
 @import './styles/header/header.scss';
 @import './styles/header/hamburger-nav.scss';
 @import './styles/header/navbar.scss';
+@import './styles/hero/hero.scss';

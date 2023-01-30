@@ -9,7 +9,7 @@ $breakpoint480: 479.98 + px;
 
 
 @media (max-width: 780px) {
-    .burger-menu {
+    .burger__btn {
         display: flex;
     }
 };
@@ -24,8 +24,8 @@ $breakpoint480: 479.98 + px;
         display: none;
     }
 
-    .burger-menu {
-        display: flex;
-    }
+    // .burger__btn {
+    //     display: flex;
+    // }
 
 };
