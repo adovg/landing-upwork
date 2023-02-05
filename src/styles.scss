@@ -15,6 +15,11 @@
 //Fonts
 $fontMain: 'Gilroy', sans-serif;
 
+// html, body{
+//   height: 100%;
+//   width: 100%;
+//   overflow: hidden;
+//   }
 
 
 .container {
@@ -72,7 +77,14 @@ $fontMain: 'Gilroy', sans-serif;
   display: none !important;
 }
 
+.responsive__img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+}
+
 @import './styles/header/header.scss';
 @import './styles/header/hamburger-nav.scss';
 @import './styles/header/navbar.scss';
 @import './styles/hero/hero.scss';
+@import './styles/story/story.scss';

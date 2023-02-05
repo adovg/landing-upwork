@@ -2,8 +2,8 @@
 
 
 window.onload = () => {
-    console.log('load')
-    console.log(window.innerWidth)
+    console.log('load');
+    console.log(window.innerWidth);
     let burgerBtn = document.querySelector('.burger__btn');
     //console.log(burgerBtn)
     burgerBtn.onclick = function () {

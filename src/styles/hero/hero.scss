@@ -1,9 +1,10 @@
 .hero {
     //position: relative;
+    overflow: hidden;
+    z-index: -1;
     &__title {
         padding-top: 106px;
-        // padding-top: 213px;
-        //padding-left: 115px;
+
         font-style: normal;
         font-weight: 700;
         font-size: 72px;
@@ -15,47 +16,56 @@
         flex-direction: column;
         flex-wrap: nowrap;
         z-index: 1;
+
         @media (max-width: $breakpoint992) {
             max-width: 100%;
             font-size: 58px;
             padding-top: 75px;
         }
+
         @media (max-width: $breakpoint768) {
             font-size: 42px;
             line-height: 110%;
             padding-top: 35px;
             text-align: center;
         }
+
         @media (max-width: $breakpoint480) {
             font-size: 32px;
 
         }
-        
+
     }
 
     &__btns {
         display: flex;
         margin-top: 34px;
         align-items: center;
+
         @media (max-width: $breakpoint768) {
             justify-content: center;
             margin-top: 24px;
         }
+
         @media (max-width: $breakpoint480) {
             flex-direction: column;
+            margin-top: 14px;
         }
 
         .hero__btn {
             margin-top: 20px;
             margin-bottom: 20px;
+
             @media (max-width: $breakpoint480) {
                 width: 100%;
                 text-align: center;
+                margin-bottom: 10px;
             }
         }
 
         span {
             display: block;
+            margin: 11px 14px;
             max-width: 19px;
             max-height: 29px;
             font-style: normal;
@@ -63,6 +73,10 @@
             font-size: 20px;
             line-height: 145%;
             color: rgba(255, 255, 255, 0.35);
+
+            @media (max-width: $breakpoint480) {
+                display: none;
+            }
         }
     }
 
@@ -74,11 +88,13 @@
         font-size: 22px;
         line-height: 145%;
         color: #AAC0E0;
+
         @media (max-width: $breakpoint992) {
             max-width: 100%;
             font-size: 20px;
             text-align: center;
         }
+
         @media (max-width: $breakpoint768) {
             margin-top: 26px;
         }
@@ -92,15 +108,16 @@
 .hero__img {
     position: absolute;
     right: 0;
-    bottom: -60px;
-    // bottom: 0;
+    //bottom: -60px;
+    bottom: 0px;
     z-index: 0;
     max-width: 45vw;
     height: auto;
-    //max-height: 700px;
+
     @media (max-width: $breakpoint1200) {
         bottom: 0;
     }
+
     @media (max-width: $breakpoint480) {
         max-width: 250px;
         width: 100%;
@@ -111,16 +128,19 @@
 .hero__content {
     position: relative;
     z-index: 1;
-    //max-width: 45vw;
 }
 
 .hero__gradient {
     position: absolute;
     right: 116px;
-    bottom: 160px;
-    // bottom: -260px;
-    max-width: 869px;
-    min-height: 869px;
+    bottom: -260px;
+    width: 869px;
+    height: 869px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(57, 139, 255, 0.324) 0%, rgba(57, 139, 255, 0.24) 20.83%, rgba(57, 139, 255, 0) 100%);
     opacity: 0.75;
+
+    @media (max-width: $breakpoint768) {
+        right: -150px;
+    }
+
 }

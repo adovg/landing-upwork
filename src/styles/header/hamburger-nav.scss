@@ -1,9 +1,19 @@
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+
 .burger__btn {
   display: none;
   flex-direction: column;
   position: fixed;
   cursor: pointer;
   z-index: 3;
+  margin-top: 15px;
+  @media (max-width: $breakpoint480) {
+    left: 80vw;
+  }
 }
 
 .line {
