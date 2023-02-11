@@ -1,0 +1,38 @@
+.features__wrapper {
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 72px;
+    @media (max-width: $breakpoint992) {
+        margin: 40px 20px 40px;
+    }
+}
+
+
+.features__icon {
+    width: 34px;
+    height: 34px;
+    flex-grow: 0;
+    object-fit: contain;
+    border-radius: 6px;
+    background-color: #eebe42;
+    //background-image: ("../../coin.svg");
+    position: relative;
+        &__img {
+            position: absolute;
+            left: 25%;
+            top: 25%;
+        }
+
+}
+
+
+.features__title {
+    margin: 24px 0 24px;
+    text-align: left;
+}
+
+.features__subtitle {
+    .subtitle__icon {
+        
+    }
+}

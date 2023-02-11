@@ -73,6 +73,15 @@ $fontMain: 'Gilroy', sans-serif;
   }
 }
 
+.title {
+  font-size: 42px;
+  line-height: 46px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color: $storyText;
+}
+
 .hidden{
   display: none !important;
 }
@@ -88,3 +97,4 @@ $fontMain: 'Gilroy', sans-serif;
 @import './styles/header/navbar.scss';
 @import './styles/hero/hero.scss';
 @import './styles/story/story.scss';
+@import './styles/features/features.scss';
