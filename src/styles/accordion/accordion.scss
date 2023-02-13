@@ -1,0 +1,28 @@
+#chck1 {
+    display: none;
+  }
+
+.tab {
+    width: 100%;
+    overflow: hidden;
+    .tab-label {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      //заглавие аккордеона
+    }
+    .tab-content {
+      max-height: 0;
+      padding: 0 1em;
+      transition: all .35s;
+      //  контент аккордеона
+    }
+  }
+  
+  input:checked {
+    ~.tab-content {
+      max-height: 100vh;
+      padding: 1em;
+      color: #fff;
+    }
+  }
