@@ -1,10 +1,16 @@
-#chck1 {
+#chck1, #chck2, #chck3 {
     display: none;
   }
 
 .tab {
     width: 100%;
     overflow: hidden;
+    //тело аккордеона
+    box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
+    border-radius: 6px;
+    //max-width: 475px;
+    margin-bottom: 14px;
+    background-color: #fff;
     .tab-label {
       display: flex;
       justify-content: space-between;
@@ -16,6 +22,8 @@
       padding: 0 1em;
       transition: all .35s;
       //  контент аккордеона
+      box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
+border-radius: 6px;
     }
   }
   
@@ -24,5 +32,7 @@
       max-height: 100vh;
       padding: 1em;
       color: #fff;
+      box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
+border-radius: 6px;
     }
   }
