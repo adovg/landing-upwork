@@ -5,12 +5,38 @@
   @media (max-width: $breakpoint992) {
     margin: 40px 20px 40px;
   }
+  @media (max-width: $breakpoint480) {
+    margin: 20px 10px 20px;
+  }
 }
 
 .features__title {
   margin: 24px 0 24px;
   text-align: left;
   color: $primary;
+  @media (max-width: $breakpoint992) {
+    text-align: center;
+  }
+  @media (max-width: $breakpoint480) {
+    margin: 0px 0px 20px;
+  }
+}
+
+.features__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (max-width: $breakpoint992) {
+    flex-direction: column;
+  
+  }
+}
+
+.features__content {
+  margin: 5px;
+  @media (max-width: $breakpoint992) {
+    margin: auto;
+  }
 }
 
 .feauture__accordion {
@@ -89,6 +115,7 @@
   flex: none;
   order: 0;
   flex-grow: 1;
+
 }
 
 .feedback {
@@ -101,14 +128,10 @@
   background-color: $grey;
   padding: 15px;
   gap: 16px;
-
   max-width: 448px;
-  max-height: 121px;
-
+  //max-height: 121px;
   border-radius: 12px;
-  .feedback__avatar {
-
-  }
+  margin-bottom: 35px;
   .feedback__about {
     .feedback__text {
       font-style: normal;
@@ -117,6 +140,9 @@
       line-height: 145%;
       color: $storyText;
       opacity: 0.75;
+      @media (max-width: $breakpoint480) {
+        text-align: center;
+      }
     }
     .feedback__signature {
       font-weight: 700;
@@ -124,9 +150,35 @@
       line-height: 100%;
       letter-spacing: -0.03em;
       color: #001731;
-      //margin-top: 8px;
       margin: 8px 0 15px;
-      //margin-bottom: 15px;
+      @media (max-width: $breakpoint480) {
+        text-align: center;
+      }
     }
   }
+  @media (max-width: $breakpoint480) {
+    flex-direction: column;
+  }
 }
+
+.features__button {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 22px;
+gap: 10px;
+
+max-width: 208px;
+max-height: 52px;
+
+/* primary-blue */
+
+background: #398BFF;
+border-radius: 4px;
+@media (max-width: $breakpoint992) {
+  text-align: center;
+  margin: auto auto 20px auto;
+}
+}
+
