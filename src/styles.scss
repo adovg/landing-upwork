@@ -37,6 +37,21 @@ $fontMain: 'Gilroy', sans-serif;
   overflow: hidden;
 }
 
+.section__wrapper {
+  padding-left: 80px;
+  padding-right: 80px;
+  //padding: 0 40px;
+  @media (max-width: $breakpoint768) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (max-width: $breakpoint480) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
 .btn {
   padding: 15px 22px;
   //padding: 8px, 22px, 8px, 22px;
@@ -52,7 +67,7 @@ $fontMain: 'Gilroy', sans-serif;
   background-color: $secondary;
   border: 3px solid #2C82FD33;
   border-radius: 4px;
-
+  cursor: pointer;
   //transition: all ease-in 0.5s;
   &:hover {
     background: $secondaryHover;
@@ -99,3 +114,4 @@ $fontMain: 'Gilroy', sans-serif;
 @import './styles/story/story.scss';
 @import './styles/accordion/accordion.scss';
 @import './styles/features/features.scss';
+@import './styles/pricing/pricing.scss';

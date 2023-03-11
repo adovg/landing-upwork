@@ -25,6 +25,25 @@ window.onload = () => {
     //     menuMobile.classList.toggle = '.hidden' ;
     // }
 
+function togglePrice () {
+    const btn = document.querySelector('.switcher');
+    const bilingItem = document.querySelectorAll('.biling__item');
+
+    btn.addEventListener('click', ()=> {
+        btn.classList.toggle('switcher-active');
+
+        if( !btn.classList.contains('switcher-active') ) {
+            bilingItem[0].classList.add('biling__item-active');
+            bilingItem[1].classList.remove('biling__item-active');
+        }else {
+            bilingItem[0].classList.remove('biling__item-active');
+            bilingItem[1].classList.add('biling__item-active');
+        }
+    })
+    
+}
+
+togglePrice (); 
 
 
 }
