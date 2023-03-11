@@ -1,0 +1,80 @@
+.learn {
+  background: $sectionBg;
+}
+
+.learn__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 112px;
+  padding-top: 74px;
+  .learn__img {
+    img {
+      //max-width: 800px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-width: $breakpoint992) {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}
+
+.learn__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  .learn__graf {
+    margin-bottom: 24px;
+  }
+  .learn__about {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 110%;
+    /* or 48px */
+
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+  }
+  .learn__text {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 145%;
+    /* or 29px */
+
+    color: $learnText;
+    margin-bottom: 32px;
+  }
+  .learn__btn {
+    // max-width: 140px;
+    // max-height: 52px;
+
+    // background: linear-gradient(0deg, #398bff, #398bff), #f7f7f7;
+    // border-radius: 4px;
+        p {
+            //margin: 15px 22px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            /* identical to box height */
+            
+            // display: flex;
+            // align-items: center;
+            text-align: center;
+     
+            color: #FFFFFF;
+
+        }
+  }
+  @media (max-width: $breakpoint992) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

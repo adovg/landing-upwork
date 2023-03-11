@@ -230,12 +230,15 @@
         margin-left: 15px;
       }
     }
+    @media (max-width: $breakpoint480) {
+      margin: auto auto 15px;
+    }
   }
 
 }
 
 .pricing__column:hover {
-  background: $secondaryHover;
+  background: $sectionBg;
   color: white;
   transition: 1s;
    .price__item {
@@ -243,8 +246,15 @@
       .price__item-img {
         background: $iconBackHover;
         transition: 3s;
+        fill: black;
+        stroke: black;
       }
     }
+    .price__icon {
+      stroke: #fff;
+      fill: white;
+      //background: #000;
+      }
    }
    .price__time {
     color: white;
