@@ -46,13 +46,13 @@
       .tab__content {
         position: relative;
         background: white;
-        max-height: 0;
+        height: 0;
         overflow: hidden;
         font-size: 20px;
         text-align: justify;
         //width: 780px;
         overflow: hidden;
-        transition: 0.8s;
+        transition: 0.5s;
       }
     }
     .tab__label {
@@ -61,6 +61,7 @@
       font-size: 30px;
       color: black;
       cursor: pointer;
+      &-plus {
       &::before {
         content: "+";
         color: black;
@@ -71,17 +72,23 @@
         transform: translateY(-50%);
       }
     }
+    }
     .tab__active {
       .tab__content {
        height: 100%;
 max-height: auto;
 overflow: visible;
-transition: 1s;
+transition: 0.5s;
       }
-      .tab__label::before {
+      .tab__label-plus::before {
         content: "-";
         font-size: 30px;
       }
     }
   }
   
+  .tab__label-noplus {
+    &::before {
+      content: none;
+    }
+  }

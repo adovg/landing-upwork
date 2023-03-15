@@ -182,3 +182,8 @@ border-radius: 4px;
 }
 }
 
+.tab__label-noplus {
+  &::before {
+    content: " ";
+  }
+}
