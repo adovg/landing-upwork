@@ -45,5 +45,13 @@ function togglePrice () {
 
 togglePrice (); 
 
+const accordion = document.getElementsByClassName('tab');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('tab__active')
+  })
+}
+
 
 }

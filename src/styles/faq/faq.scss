@@ -1,9 +1,11 @@
 .faq__graf {
   margin-top: 70px;
+
   @media (max-width: $breakpoint768) {
     margin-top: 50px;
   }
 }
+
 .faq__title {
   margin-top: 24px;
   margin-bottom: 64px;
@@ -16,33 +18,27 @@
 }
 
 .faq__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .faq__items {
+    //padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    .faq__items {
-        //padding: 24px;
-        padding: 24px;
+    padding: 24px;
+    border: 1px solid $faqItemBorder;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
 
-        border: 1px solid $faqItemBorder;
-        border-radius: 12px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .faq__items__text {
-            font-weight: 600;
-font-size: 24px;
-line-height: 32px;
-/* identical to box height, or 133% */
-
-display: flex;
-align-items: flex-end;
-
-/* dark-blue */
-
-color: $primary;
-        }
-        .faq__items__icon {
-
-        }
+    .faq__items__text {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      display: flex;
+      align-items: flex-end;
+      color: $primary;
     }
+  }
 }

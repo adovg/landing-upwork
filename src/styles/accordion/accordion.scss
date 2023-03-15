@@ -1,37 +1,87 @@
-#chck1, #chck2, #chck3 {
-    display: none;
-  }
+// #chck1, #chck2, #chck3, #chck10 {
+//     display: none;
+//   }
 
-.tab {
-    width: 100%;
-    overflow: hidden;
-    //тело аккордеона
-    box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
-    border-radius: 6px;
-    margin-bottom: 14px;
-    background-color: #fff;
-    .tab-label {
-      display: flex;
-      justify-content: space-between;
-      cursor: pointer;
-      //заглавие аккордеона
+// .tab {
+//     width: 100%;
+//     overflow: hidden;
+//     //тело аккордеона
+//     box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
+//     border-radius: 6px;
+//     margin-bottom: 14px;
+//     background-color: #fff;
+//     .tab-label {
+//       display: flex;
+//       justify-content: space-between;
+//       cursor: pointer;
+//       //заглавие аккордеона
+//     }
+//     .tab-content {
+//       max-height: 0;
+//       padding: 0 1em;
+//       transition: all .35s;
+//       //  контент аккордеона
+//       box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
+// border-radius: 6px;
+//     }
+//   }
+  
+//   input:checked {
+//     ~.tab-content {
+//       max-height: 100vh;
+//       padding: 1em;
+//       color: #fff;
+//       box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
+// border-radius: 6px;
+//     }
+//   }
+
+/////////////////////////////////
+  .accordion {
+
+    .tab {
+      background-color: #fff;
+      position: relative;
+      margin: 10px 10px;
+      .tab__content {
+        position: relative;
+        background: white;
+        max-height: 0;
+        overflow: hidden;
+        font-size: 20px;
+        text-align: justify;
+        //width: 780px;
+        overflow: hidden;
+        transition: 0.8s;
+      }
     }
-    .tab-content {
-      max-height: 0;
-      padding: 0 1em;
-      transition: all .35s;
-      //  контент аккордеона
-      box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
-border-radius: 6px;
+    .tab__label {
+      position: relative;
+      padding: 10px 0;
+      font-size: 30px;
+      color: black;
+      cursor: pointer;
+      &::before {
+        content: "+";
+        color: black;
+        position: absolute;
+        top: 50%;
+        right: -5px;
+        font-size: 30px;
+        transform: translateY(-50%);
+      }
+    }
+    .tab__active {
+      .tab__content {
+       height: 100%;
+max-height: auto;
+overflow: visible;
+transition: 1s;
+      }
+      .tab__label::before {
+        content: "-";
+        font-size: 30px;
+      }
     }
   }
   
-  input:checked {
-    ~.tab-content {
-      max-height: 100vh;
-      padding: 1em;
-      color: #fff;
-      box-shadow: 0px 4px 15px rgba(10, 21, 39, 0.1);
-border-radius: 6px;
-    }
-  }
