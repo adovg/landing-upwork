@@ -28,7 +28,6 @@
   justify-content: space-between;
   @media (max-width: $breakpoint992) {
     flex-direction: column;
-  
   }
 }
 
@@ -56,8 +55,6 @@
   flex-grow: 0;
   object-fit: contain;
   border-radius: 6px;
-  //background-color: #eebe42;
-  //background-image: ("../../coin.svg");
   position: relative;
   &__img {
     position: absolute;
@@ -72,10 +69,6 @@
   align-items: center;
   color: rgba(0, 23, 49, 0.55);
   transition: all ease 0.5s;
-  //opacity: 0.5;
-  //   h4 {
-  //     border-bottom: 1px solid #edf1f6;
-  //   }
   .subtitle__icon {
     width: 30px;
     height: 30px;
@@ -83,39 +76,25 @@
     margin: 30px;
     background-color: rgba(0, 23, 49, 0.55);
     border-radius: 6px;
-    //transition: all ease 0.5s;
   }
   &:hover {
     color: $primary;
     .subtitle__icon {
-      //;
       background-color: $primary;
     }
   }
 }
 
 .features__text {
-  //     width: 419px;
-  // height: 60px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 190%;
-  /* or 30px */
-
   letter-spacing: 0.02em;
-
-  /* dark-blue-55 */
-
   color: rgba(0, 23, 49, 0.55);
-
-  /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 1;
-
 }
 
 .feedback {
@@ -129,7 +108,6 @@
   padding: 15px;
   gap: 16px;
   max-width: 448px;
-  //max-height: 121px;
   border-radius: 12px;
   margin-bottom: 35px;
   .feedback__about {
@@ -162,24 +140,21 @@
 }
 
 .features__button {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 8px 22px;
-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 22px;
+  gap: 10px;
 
-max-width: 208px;
-max-height: 52px;
-
-/* primary-blue */
-
-background: #398BFF;
-border-radius: 4px;
-@media (max-width: $breakpoint992) {
-  text-align: center;
-  margin: auto auto 20px auto;
-}
+  max-width: 208px;
+  max-height: 52px;
+  background: $secondary;
+  border-radius: 4px;
+  @media (max-width: $breakpoint992) {
+    text-align: center;
+    margin: auto auto 20px auto;
+  }
 }
 
 .tab__label-noplus {

@@ -1,57 +1,43 @@
-// import "./styles.scss";
-
-
 window.onload = () => {
-    console.log('load');
-    console.log(window.innerWidth);
-    let burgerBtn = document.querySelector('.burger__btn');
-    //console.log(burgerBtn)
-    burgerBtn.onclick = function () {
-        console.log('click')
-        //burgerBtn.toggleAttribute('hidden')
-        hideMenu();
-    }
+  const burgerBtn = document.querySelector(".burger__btn");
+  const menuMobile = document.querySelector(".menu-mobile");
+  const accordion = document.getElementsByClassName("tab");
 
+  burgerBtn.onclick = function () {
+    hideMenu();
+  };
 
-    function hideMenu() {
-        const menuMobile = document.querySelector('.menu-mobile');
-        //menuMobile.toggleAttribute('hidden');
-        menuMobile.classList.toggle('hidden');
-      
-       
-    }
+  menuMobile.onclick = function () {
+    hideMenu();
+  };
 
-    // if(window.innerWidth >= 768) {
-    //     menuMobile.classList.toggle = '.hidden' ;
-    // }
+  function hideMenu() {
+    const menuMobile = document.querySelector(".menu-mobile");
+    menuMobile.classList.toggle("hidden");
+  }
 
-function togglePrice () {
-    const btn = document.querySelector('.switcher');
-    const bilingItem = document.querySelectorAll('.biling__item');
+  function togglePrice() {
+    const btn = document.querySelector(".switcher");
+    const bilingItem = document.querySelectorAll(".biling__item");
 
-    btn.addEventListener('click', ()=> {
-        btn.classList.toggle('switcher-active');
+    btn.addEventListener("click", () => {
+      btn.classList.toggle("switcher-active");
 
-        if( !btn.classList.contains('switcher-active') ) {
-            bilingItem[0].classList.add('biling__item-active');
-            bilingItem[1].classList.remove('biling__item-active');
-        }else {
-            bilingItem[0].classList.remove('biling__item-active');
-            bilingItem[1].classList.add('biling__item-active');
-        }
-    })
-    
-}
+      if (!btn.classList.contains("switcher-active")) {
+        bilingItem[0].classList.add("biling__item-active");
+        bilingItem[1].classList.remove("biling__item-active");
+      } else {
+        bilingItem[0].classList.remove("biling__item-active");
+        bilingItem[1].classList.add("biling__item-active");
+      }
+    });
+  }
 
-togglePrice (); 
+  togglePrice();
 
-const accordion = document.getElementsByClassName('tab');
-
-for (i=0; i<accordion.length; i++) {
-  accordion[i].addEventListener('click', function () {
-    this.classList.toggle('tab__active')
-  })
-}
-
-
-}
+  for (i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function () {
+      this.classList.toggle("tab__active");
+    });
+  }
+};

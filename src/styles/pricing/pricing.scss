@@ -1,16 +1,10 @@
-// .pricing__wrap {
-//   padding-left: 40px;
-//   padding-right: 40px;
-// }
 .pricing {
-  // margin-left: 80px;
   margin-top: 80px;
   margin-bottom: 72px;
   @media (max-width: $breakpoint768) {
     text-align: center;
   }
   @media (max-width: $breakpoint768) {
-    
   }
 }
 
@@ -74,7 +68,6 @@
   height: 24px;
   background: $secondary;
   border-radius: 100px;
-  //position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -85,9 +78,6 @@
     height: 19px;
     background: #fff;
     border-radius: 100%;
-    // position: absolute;
-    // left: 2.3px;
-    // top: 2.3px;
     transition: all 1s ease-out;
     cursor: pointer;
   }
@@ -106,29 +96,23 @@
   gap: 8px;
   margin-top: 27px;
   margin-bottom: 108px;
-    @media (max-width: $breakpoint992) {
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+  @media (max-width: $breakpoint992) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .pricing__column {
-  // max-width: 406px;
-  // height: 975px;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 27px;
- 
   flex: 0 1 406px;
-  //margin-left: 30px;
-  //margin-right: 30px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 15px rgba(10, 17, 85, 0.1);
   border-radius: 12px;
   @media (max-width: $breakpoint992) {
     flex: 0 1 90%;
   }
-  
   .price__rate {
     display: flex;
     margin-bottom: 17px;
@@ -167,8 +151,6 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 110%;
-    /* or 46px */
-
     letter-spacing: -0.03em;
     span {
       color: $greyText;
@@ -198,28 +180,25 @@
     }
   }
   .price__button {
-  margin: 22px auto 48px;
-  padding: 8px 22px;
-  gap: 10px;
-  min-height: 52px;
-  max-width: 359px;
-  width: 100%;
-  //background: #398BFF;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    margin: 22px auto 48px;
+    padding: 8px 22px;
+    gap: 10px;
+    min-height: 52px;
+    max-width: 359px;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .price__item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    //max-width: 359px;
     margin: auto auto 40px;
     .price__group {
       display: flex;
-      //justify-content: space-between;
       align-items: center;
       .price__item-img {
         background: $iconBack;
@@ -234,14 +213,13 @@
       margin: auto auto 15px;
     }
   }
-
 }
 
 .pricing__column:hover {
   background: $sectionBg;
   color: white;
   transition: 1s;
-   .price__item {
+  .price__item {
     .price__group {
       .price__item-img {
         background: $iconBackHover;
@@ -253,13 +231,12 @@
     .price__icon {
       stroke: #fff;
       fill: white;
-      //background: #000;
-      }
-   }
-   .price__time {
+    }
+  }
+  .price__time {
     color: white;
-   }
-   .price__about p {
+  }
+  .price__about p {
     color: white;
-   }
+  }
 }

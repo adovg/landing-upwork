@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 $containerWidth: 1380;
 $containerPadding: 40;
 $containerSidePadding: math.div($containerPadding, 2);
@@ -7,25 +7,17 @@ $breakpoint992: 991.98 + px;
 $breakpoint768: 767.98 + px;
 $breakpoint480: 479.98 + px;
 
-
 @media (max-width: 780px) {
-    .burger__btn {
-        display: flex;
-    }
-};
-
+  .burger__btn {
+    display: flex;
+  }
+}
 
 @media (max-width: 798px) {
-
-    .menu__item {
-        display: none;
-    }
-    .logo{
-        display: none;
-    }
-
-    // .burger__btn {
-    //     display: flex;
-    // }
-
-};
+  .menu__item {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+} ;
