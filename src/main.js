@@ -4,7 +4,6 @@ window.onload = () => {
   const burgerBtn = document.querySelector(".burger__btn");
   const menuMobile = document.querySelector(".menu-mobile");
   const accordion = document.getElementsByClassName("tab");
-  console.log(accordion);
 
   burgerBtn.onclick = function () {
     hideMenu();

@@ -33,6 +33,10 @@ nav {
       opacity: 1;
       transition: 0.3s ease;
     }
+    a, a:active {
+      text-decoration: none !important;
+      color: #fff;
+    }
   }
 }
 
