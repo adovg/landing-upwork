@@ -1,7 +1,11 @@
+import '../src/styles.scss';
+
 window.onload = () => {
+  console.log('first');
   const burgerBtn = document.querySelector(".burger__btn");
   const menuMobile = document.querySelector(".menu-mobile");
   const accordion = document.getElementsByClassName("tab");
+  console.log(accordion);
 
   burgerBtn.onclick = function () {
     hideMenu();
@@ -35,9 +39,10 @@ window.onload = () => {
 
   togglePrice();
 
-  for (i = 0; i < accordion.length; i++) {
+  for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function () {
       this.classList.toggle("tab__active");
     });
   }
+
 };
